@@ -12,7 +12,7 @@ Begin
 	From Pokemon 
 	Where NPokedex = @NPokedex)
 		Begin 
-			Raiserror('Ya existe un Pokémon con ese numero de Pokédex', 16, 1);
+			Raiserror('Ya existe un PokÃ©mon con ese numero de PokÃ©dex', 16, 1);
 			Return;
 		End --para verificar si npokedex variable es igual a algun npokedex, si detecta valor 1 tira error
 
@@ -21,4 +21,6 @@ Begin
 End
 
 
---EXEC sp_AgregarPokemon 'Pruebaneitor', 80, 175, 810, 9
+--Exec sp_AgregarPokemon 'Pruebaneitor', 80, 175, 810, 9
+--Exec sp_AgregarPokemon 'Testneitor', 90, 185, 811, 9
+--Exec sp_AgregarPokemon 'Passneitor', 100, 195, 812, 9
