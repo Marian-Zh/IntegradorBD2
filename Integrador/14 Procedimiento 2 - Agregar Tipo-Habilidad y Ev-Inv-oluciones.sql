@@ -44,8 +44,7 @@ Begin
 				From HabilidadPokemon
 				Where IDPokemon = @IDPokemon AND IDHabilidad = @IDHabilidad) --lo mismo que la verificacion de arriba en tipo pero insertando habilidad en idpokemon
 			Begin
-				Insert Into HabilidadPokemon (IDPokemon, IDHabilidad)
-				Values (@IDPokemon, @IDHabilidad)
+				Update HabilidadPokemon Set IDHabilidad = @IDHabilidad Where IDPokemon = @IDPokemon --hacemos update por que el trigger nos coloca la habilidad 1 en un poke recien cargado
 			End
 
 --
