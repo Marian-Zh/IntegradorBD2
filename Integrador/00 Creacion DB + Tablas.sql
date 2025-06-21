@@ -70,3 +70,13 @@ Primary Key (IDPokemon, IDHabilidad),
 Foreign Key (IDPokemon) References Pokemon(IDPokemon),
 Foreign Key (IDHabilidad) References Habilidades(IDHabilidad)
 );
+
+Create Table PokemonesEliminados (
+IDPokemon INT,
+Nombre VARCHAR(100),
+Peso FLOAT,
+Altura FLOAT,
+NPokedex INT,
+IDRegion INT,
+FechaEliminacion DATETIME
+);
